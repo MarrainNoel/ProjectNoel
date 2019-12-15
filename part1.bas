@@ -2,9 +2,11 @@
 20 REM ### CAR RACE
 30 screen 0: cls
 40 print "PART 1 - ALL YOUR BASE ARE BELONG TO US"
-50 locate 5, 1: print "blah, blah"
-60 locate 10, 1: print "INSTRUCTIONS:": print "A - LEFT": print "L - RIGHT": print " ": print "The progress bar at the bottom will show you the distance to your destination"
-70 locate 16, 1: input "READY [Y/N]"; R$
+50 locate 5, 1: print "Our hero (you, in case you were not following...) jumps into his car and drives straight to the fortress where the computer hosting NETSKY is ";
+51 print "(yeah, this is before the internet and the cloud - there is an actual physical computer, probably located in Ukraine. How is a disconnected computer supposed to take over the world ? stop asking dumb questions)"
+52 print "": print "So, just move the car ahead and don't crash into the side of the road..."
+60 locate 14, 1: print "INSTRUCTIONS:": print "A - LEFT": print "L - RIGHT": print " ": print "The progress bar at the bottom will show you the distance to your destination"
+70 locate 20, 1: input "READY [Y/N]"; R$
 80 if (R$ = "y") or (R$ = "Y") then gosub 500 else goto 30
 90 goto 10000
 

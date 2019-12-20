@@ -2,9 +2,12 @@
 20 REM ### MAZE
 30 screen 0: cls
 40 print "PART 3 - THE FINAL BOSS"
-50 locate 5, 1: print "blah, blah"
-60 locate 10, 1: print "INSTRUCTIONS:": print "Oh come on... this one is easy. Just enter the column you want to play..."
-70 locate 16, 1: input "READY [Y/N]"; R$
+50 locate 5, 1: print "This is it. You're now facing NETSKY, a super-powerful computer with 1Mb of RAM, 10Mb of hard-drive and two (yes, two!) 3.5' floppy disk drives!"
+51 print "Not to mention the 12Mhz CPU... well this looks bad. NETSKY wants to use his super computing power and AI to challenge you a game of... CONNECT 4"
+52 print "": print "What did you think it would be ? A game of tic-tac-toe ? That just always ends up in a draw!"
+53 print "": print "": print "Defeat the evil computer and save the earth!"
+60 locate 16, 1: print "INSTRUCTIONS:": print "You know the drill. Get 4 X in row/column/diagonal. Just enter the column you want to play..."
+70 locate 20, 1: input "READY [Y/N]"; R$
 80 if (R$ = "y") or (R$ = "Y") then gosub 500 else goto 30
 90 goto 10000
 

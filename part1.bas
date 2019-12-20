@@ -13,7 +13,7 @@
 500 REM GAME LOOP
 510 screen 2: cls
 520 gosub 1000
-530 gosub 6000: iter = 0: maxiter = 1000: view (0,0)-(639, lr*8)
+530 gosub 6000: iter = 0: maxiter = 750: view (0,0)-(639, lr*8)
 540 while (iter < maxiter) and (hascrashed = 0)
 550 cls: gosub 2000
 560 gosub 3000
